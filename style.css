@@ -1,0 +1,132 @@
+*{
+	font-family: "actor";
+}
+
+div{
+	clear: both;
+	position: relative;
+}
+
+html{
+	background-color: #1a0665;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+/*	nav menu */
+.navigation_bar{
+	margin: 0;
+	padding: 0;
+	border: none;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+ul{
+  	list-style-type: none;
+	overflow: hidden;
+	background-color: #1a0665;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 0 5px black;
+}
+
+li{
+	float: left;
+	padding: 8px;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 30px;
+	font-variant: small-caps;
+}
+
+li a:hover{
+	animation-name: colorshift;
+	animation-duration: 0.3s;
+	background-color: #CB2B7E;
+}
+
+@keyframes colorshift{
+	0%{background-color: #1A0665;}
+	25%{background-color: #58136E;}
+	50%{background-color: #731872;}
+	75%{background-color: #9D2178;}
+	100%{background-color: #CB2B7E;}
+}
+
+/*slide in animation*/
+div#cats{
+	animation-name: slidein;
+	animation-duration: 2s;
+	position: relative;
+}
+
+@keyframes slidein{
+	from{
+		left: 300%;
+	}
+	to{
+		left: 0%;
+	}
+}
+
+/* cat card */
+div.cat{
+	background-color: #155ab2;
+	padding: 20px 30px 30px 30px;
+	margin: 1% 4%;
+	color:white;
+}
+
+/* cat name */
+h3{
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 0;
+	margin: 5px;
+	font-variant: small-caps;
+}	
+
+/*image*/
+a img{
+	padding: 5px;
+	float: left;
+}
+
+a img:hover{
+	background-color: #CB2B7E;
+}
+
+a img:active{
+	background-color: #ff0000;
+}
+
+p.info{
+	vertical-align: right;
+	position: relative;
+	left: 20px;
+}
+/* bolded "from stage text" */
+.obtained-from{
+	clear: both;
+	position: relative;
+	font-weight: bold;
+	font-size: 20px;
+	top: 10px;
+}
+
+/*line*/
+hr{
+	border: 2px solid #55ffbe;
+}
