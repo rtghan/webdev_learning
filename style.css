@@ -36,6 +36,10 @@ ul{
 	box-shadow: 0 0 5px black;
 }
 
+a{
+	text-decoration: none;
+}
+
 li{
 	float: left;
 	padding: 8px;
